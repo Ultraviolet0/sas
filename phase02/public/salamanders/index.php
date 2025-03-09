@@ -9,13 +9,13 @@
 ?>
 
 <?php 
-$pageTitle = 'Salamanders';
+$pageTitle = 'Salamanders Main Page';
 include(SHARED_PATH . '/salamander-header.php');
 ?>
 
 <h1><?= $pageTitle; ?></h1>
 
-<a href="#">Create Salamander</a>
+<a href="<?php echo url_for('/salamanders/new.php'); ?>">Create a Salamander</a>
 
 <table>
   <tr>
@@ -31,7 +31,7 @@ include(SHARED_PATH . '/salamander-header.php');
       <td><?php echo h($salamander['id']); ?></td>
       <td><?php echo h($salamander['salamanderName']); ?>
       <td><a class="action" href="<?php echo url_for('/salamanders/show.php?id=' . h(u($salamander['id']))); ?>">View</a></td>
-      <td><a href="#">Edit</a></td>
+      <td><a class="action" href="<?php echo url_for('/salamanders/edit.php?id=' . h(u($salamander['id']))); ?>">Edit</a></td>
       <td><a href="#">Delete</a></td>
     </tr>
   <?php } ?>
