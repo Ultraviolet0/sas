@@ -1,0 +1,12 @@
+public/index.php -> ../private/initialize.php
+
+    * Define constants
+    * Use the define function
+    * Creates a WWW_ROOT constant
+
+public/index.php -> ../private/initialize.php -> salamander-header.php -> private/functions
+
+h
+url_for
+
+public/index.php -> ../private/initialize.php -> salamander-header.php -> private/functions -> salamanders/index.php
