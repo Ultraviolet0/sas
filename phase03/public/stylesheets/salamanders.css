@@ -1,0 +1,181 @@
+/* General Reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-color: #680281;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+/* Wrapper */
+#wrapper {
+  background-color: #fff;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #680281;
+  color: white;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+}
+
+header a {
+  color: #fff;
+}
+
+/* Navigation */
+nav {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+nav a {
+  /* color: #000; */
+  /* text-decoration: none; */
+  font-size: 16px;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #ffcc00;  /* More visible link hover/focus state */
+  outline: 2px solid #ffcc00;
+}
+
+/* Content */
+#content {
+  width: 100%;
+  max-width: 920px;
+  padding: 30px;
+  background-color: #f8f8f8;
+  margin: 0 auto;
+  min-height: 500px;
+}
+
+footer {
+  background-color: #680281;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid #999999;
+  text-align: left;
+}
+
+table th {
+  background-color: #680281;
+  color: white;
+}
+
+/* Forms */
+dl {
+  margin: 0.5em 0;
+  overflow: hidden;
+}
+
+dt {
+  float: left;
+  width: 120px;
+  font-weight: bold;
+  color: #333;
+}
+
+dd {
+  margin-left: 140px;
+}
+
+/* Error Styles */
+.errors {
+  display: inline-block;
+  background-color: #ffe6e6;
+  border: 2px solid red;
+  color: red;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+}
+
+.errors ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.errors li {
+  margin-bottom: 0.5em;
+}
+
+/* Actions */
+.actions {
+  margin-bottom: 1em;
+}
+
+/* Accessibility improvements */
+a:focus {
+  outline: 3px solid #ffcc00; /* Ensure clear focus states for accessibility */
+}
+
+a:hover {
+  text-decoration: underline; /* Clear visual cue for links */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  #wrapper {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 1em;
+  }
+
+  #content {
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
